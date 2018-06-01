@@ -2,7 +2,7 @@
 
 :unicorn: A project to learn react
 
-## Follow me
+## :eyes: Follow me
 
 You can follow me on :
 - [Linkedin](https://www.linkedin.com/in/marie-chiaverini-82483912a/?locale=en_US)
@@ -10,6 +10,6 @@ You can follow me on :
 - [Website](http://mariechiaverini/EN)
 
 
-## License
+## :page_with_curl: License
 
 I am using MIT Licence 
