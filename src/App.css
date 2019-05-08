@@ -30,10 +30,19 @@
 }
 
 .chen {
-  margin-top: 10vh;
+  margin-top: 5vh;
+  width: 10vw;
+  height: 35vh;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.card {
+  width: 17vw;
+  display: inline-block;
+  margin: 1em;
+}
+

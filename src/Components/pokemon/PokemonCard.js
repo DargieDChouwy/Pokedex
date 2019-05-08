@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import 'mdbreact/dist/css/mdb.css';
 import styled from 'styled-components';
+import '../../App.css';
+
 
   const Sprite = styled.img`
-    width: 5em;
-    height: 5em;
+    width: 7em;
+    height: 7em;
   `;
 
 export default class PokemonCard extends Component {
@@ -30,7 +32,6 @@ componentDidMount () {
 
   render() {
     return (
-      <div className='row'>
         <div className='card'>
             <div className='card-header'><h1>{this.state.name}</h1>
             {this.state.imageLoading ? (
@@ -55,7 +56,6 @@ componentDidMount () {
                   </div>
             </div>
         </div>
-      </div>
     );
   }
 }

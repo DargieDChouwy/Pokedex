@@ -2,10 +2,11 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import PokemonCard from './PokemonCard';
 
+
 export default class PokemonList extends Component {
   /*We are calling the API here*/
 state = {
-  url:'/pokemon/',
+  url:'/pokemon/?offset=0&limit=151',
   pokemon: null
 };
   
@@ -17,7 +18,7 @@ async componentDidMount() {
   render() {
     return (
      <React.Fragment> {/*don't want to keep burying our content*/}
-      {this.state.pokemon ? (<div className='row'>
+      {this.state.pokemon ? (<div>
         {
           this.state.pokemon.map(pokemon => (
             <PokemonCard 
