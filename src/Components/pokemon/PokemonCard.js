@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import 'mdbreact/dist/css/mdb.css';
 import styled from 'styled-components';
+import axios from 'axios';
+
 import '../../App.css';
 
 
@@ -14,20 +16,25 @@ export default class PokemonCard extends Component {
     name: '',
     imageUrl:'',
     pokemonIndex:'',
-    imageLoading: true,
-    toManyRequests: false
+    types:[],
+    imageLoading: true
   }
 
-componentDidMount () {
-  const {name, url } = this.props; 
+  async componentDidMount () {
+  const {name, url} = this.props; 
   const pokemonIndex = url.split("/")[url.split('/').length - 2];
   const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`;
 
-  this.setState({
+
+  await axios.get('http://localhost:8000/api/v2/pokemon/'+pokemonIndex)
+  .then(request => {
+    this.setState({
     name: name,
+    types: request.data.types,
     imageUrl: imageUrl,
-    pokemonIndex: pokemonIndex
+    pokemonIndex: pokemonIndex,
     });
+  });
 }
 
   render() {
@@ -39,10 +46,8 @@ componentDidMount () {
             ) : null}
               <Sprite className='card-img-top rounded mx-auto' 
               onLoad={() => this.setState({imageLoading: false})}
-              onError={() => this.setState({toManyRequests: true})}
               src={this.state.imageUrl}
               style={
-                this.state.toManyRequests ? { } :
                 this.state.imageLoading ? null : {}
               }
               />
@@ -50,6 +55,7 @@ componentDidMount () {
                 <span className='badge badge-danger'>Too many request</span>
                 </h6>) : null}
                 <div className='card-body'>
+               {this.state.types.map(element => (<h5 className="elementType" key={element.type.name}>{element.type.name}</h5>))}
                 </div>
                   <div className='card-title'>
                     <h5>{this.state.pokemonIndex}</h5>

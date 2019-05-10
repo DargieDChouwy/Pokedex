@@ -2,7 +2,7 @@
   "name": "improve",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://pokeapi.co/api/v2/",
+  "proxy": "http://localhost:8000/api/v2/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",

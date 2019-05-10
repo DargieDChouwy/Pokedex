@@ -11,10 +11,10 @@ class App extends Component {
     this.state = {
         showComponent: false,
     };
-    this._onButtonClick = this._onButtonClick.bind(this);
+    this.showPokemonList = this.showPokemonList.bind(this);
   }
 
-  _onButtonClick(){
+  showPokemonList(){
     this.setState({
       showComponent: true,
     });
@@ -31,7 +31,7 @@ class App extends Component {
           <div>
             <img src={chen} className="chen" alt="chen" />
           </div>
-           <button onClick={this._onButtonClick}>View first pokemon generation</button>
+           <button onClick={this.showPokemonList}>View first pokemon generation</button>
         </div> 
            {
              this.state.showComponent ? <PokemonList /> : null

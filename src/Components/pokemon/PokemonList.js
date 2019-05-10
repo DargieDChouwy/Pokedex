@@ -16,6 +16,7 @@ async componentDidMount() {
 }
 
   render() {
+    console.log(this.state.pokemon)
     return (
      <React.Fragment> {/*don't want to keep burying our content*/}
       {this.state.pokemon ? (<div>
@@ -25,6 +26,7 @@ async componentDidMount() {
               key={pokemon.name}
               name={pokemon.name}
               url={pokemon.url}
+              type={pokemon.types}
             />
           ))
         }

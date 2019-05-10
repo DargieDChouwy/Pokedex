@@ -46,3 +46,14 @@
   margin: 1em;
 }
 
+.elementType {
+  display: inline-block;
+  font-weight: bold !important;
+  background-color: cornflowerblue;
+  border-radius: 0.4em;
+  margin: 0.2vw;
+  padding: 0.4em 0.4em;
+  color: white;
+  
+}
+
