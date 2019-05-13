@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import 'mdbreact/dist/css/mdb.css';
 import styled from 'styled-components';
 import axios from 'axios';
-
 import '../../App.css';
-
 
   const Sprite = styled.img`
     width: 7em;
@@ -40,7 +38,8 @@ export default class PokemonCard extends Component {
   render() {
     return (
         <div className='card'>
-            <div className='card-header'><h1>{this.state.name}</h1>
+            <div className='card-header'>
+            <h1>{this.state.name.charAt(0).toUpperCase() + this.state.name.slice(1).toLowerCase()}</h1>
             {this.state.imageLoading ? (
               <h1>LOADING</h1>
             ) : null}
@@ -55,10 +54,10 @@ export default class PokemonCard extends Component {
                 <span className='badge badge-danger'>Too many request</span>
                 </h6>) : null}
                 <div className='card-body'>
-               {this.state.types.map(element => (<h5 className="elementType" key={element.type.name}>{element.type.name}</h5>))}
+               {this.state.types.map(element => (<h5 className={'elementType ' + element.type.name} key={element.type.name}>{element.type.name}</h5>))}
                 </div>
                   <div className='card-title'>
-                    <h5>{this.state.pokemonIndex}</h5>
+                    <h5>#{this.state.pokemonIndex}</h5>
                   </div>
             </div>
         </div>
