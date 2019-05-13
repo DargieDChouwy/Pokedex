@@ -54,7 +54,7 @@ export default class PokemonCard extends Component {
                 <span className='badge badge-danger'>Too many request</span>
                 </h6>) : null}
                 <div className='card-body'>
-               {this.state.types.map(element => (<h5 className={'elementType ' + element.type.name} key={element.type.name}>{element.type.name}</h5>))}
+               {this.state.types.map(element => (<h5 className={'elementType ' + element.type.name} key={element.type.name}>{element.type.name.charAt(0).toUpperCase() + element.type.name.slice(1).toLowerCase()}</h5>))}
                 </div>
                   <div className='card-title'>
                     <h5>#{this.state.pokemonIndex}</h5>
