@@ -41,7 +41,7 @@ export default class PokemonCard extends Component {
             <div className='card-header'>
             <h1>{this.state.name.charAt(0).toUpperCase() + this.state.name.slice(1).toLowerCase()}</h1>
             {this.state.imageLoading ? (
-              <h1>LOADING</h1>
+              <h1>LOADING ...</h1>
             ) : null}
               <Sprite className='card-img-top rounded mx-auto' 
               onLoad={() => this.setState({imageLoading: false})}
