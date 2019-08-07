@@ -5,6 +5,7 @@ import '../../App.css';
 import 'mdbreact/dist/css/mdb.css';
 import FooterPage from "./footer";
 import PokemonList from '../pokemon/PokemonList';
+
 class App extends Component {
   constructor(props){
     super(props);
