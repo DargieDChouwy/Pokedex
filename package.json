@@ -1,21 +1,14 @@
 {
-  "name": "improve",
+  "name": "Pokedex",
   "version": "0.1.0",
   "private": true,
-  "proxy": "http://localhost:3001/api/v2/",
+  "proxy": "https://pokeapi.co/api/v2",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.21",
     "@fortawesome/free-solid-svg-icons": "^5.10.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.19.0",
     "i": "^0.3.6",
-    "mdbreact": "^4.19.0",
-    "nodemon": "^1.19.1",
-    "npm": "^6.10.3",
-    "pokedex-promise-v2": "^3.2.0",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "mdbreact": "^4.4.0",
     "nodemon": "^1.19.0",
     "npm": "^6.9.0",
     "pokedex-promise-v2": "^3.1.1",
@@ -30,5 +23,17 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

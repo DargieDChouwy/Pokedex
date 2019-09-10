@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import 'mdbreact/dist/css/mdb.css';
 import styled from 'styled-components';
 import axios from 'axios';
 import '../../App.css';
@@ -24,7 +23,7 @@ export default class PokemonCard extends Component {
   const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonIndex}.png`;
 
 
-  await axios.get('http://localhost:3001/api/v2/pokemon/'+pokemonIndex)
+  await axios.get('https://pokeapi.co/api/v2/pokemon/'+pokemonIndex)
   .then(request => {
     this.setState({
     name: name,

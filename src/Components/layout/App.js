@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import pokeball from '../../image/pokeball.png';
 import chen from '../../image/chen.png'
 import '../../App.css';
-import 'mdbreact/dist/css/mdb.css';
 import FooterPage from "./footer";
 import PokemonList from '../pokemon/PokemonList';
 
