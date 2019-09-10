@@ -4,11 +4,7 @@
   "private": true,
   "proxy": "https://pokeapi.co/api/v2",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.21",
-    "@fortawesome/free-solid-svg-icons": "^5.10.1",
-    "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.19.0",
-    "i": "^0.3.6",
     "nodemon": "^1.19.0",
     "npm": "^6.9.0",
     "pokedex-promise-v2": "^3.1.1",

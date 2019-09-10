@@ -33,7 +33,6 @@ export default class PokemonCard extends Component {
     });
   });
 }
-
   render() {
     return (
         <div className='card'>
