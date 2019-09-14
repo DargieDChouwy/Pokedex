@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components';
 import axios from 'axios';
-import '../../App.css';
+import '../../index.css';
 
   const Sprite = styled.img`
     width: 7em;

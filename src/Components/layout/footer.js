@@ -1,7 +1,5 @@
 import React from 'react';
-import '../../App.css';
-import './App.js';
-
+import '../../index.css'
 class FooterPage extends React.Component {
     render(){
         return(
