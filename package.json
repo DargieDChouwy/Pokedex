@@ -1,9 +1,11 @@
 {
-  "name": "Pokedex",
+  "name": "pokedex",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://pokeapi.co/api/v2",
   "dependencies": {
     "axios": "^0.19.0",
+    "nodemon": "^1.19.0",
     "npm": "^6.9.0",
     "pokedex-promise-v2": "^3.1.1",
     "react": "^16.4.0",
@@ -29,8 +31,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.2"
   }
 }
