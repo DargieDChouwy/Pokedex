@@ -1,3 +1,3 @@
 # Pokedex
 
-Learning react
+Learning react and API REST with Axios.
