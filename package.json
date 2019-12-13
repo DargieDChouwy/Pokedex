@@ -6,7 +6,7 @@
   "dependencies": {
     "axios": "^0.19.0",
     "nodemon": "^1.19.0",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "pokedex-promise-v2": "^3.1.1",
     "react": "^16.4.0",
     "react-dom": "^16.4.2",
